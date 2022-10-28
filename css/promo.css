@@ -1,0 +1,237 @@
+body {
+  background-color:  rgba(28, 28, 28, 0.9);
+  background-image: url('../image/header/bg.jpg');
+  background-position: 50% 40%;
+}
+.page-main--intro {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.8s ease;
+  background-image: url('../image/promo/kid_VR.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 400px 350px;
+}
+.page-main--intro.hidden {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .page-main--intro {
+    background-size: 280px 245px;
+  }
+}
+@media (max-width: 850px) {
+  .page-main--intro {
+    background-image: none;
+  }
+}
+.page-main--intro.translate {
+  transform: translate(100px, 0);
+}
+.promo {
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.promo-container {
+  margin: 11% auto 0;
+  max-width: 1200px;
+  padding-left: 57px;
+  padding-right: 16px;
+}
+@media (max-width: 850px) {
+  .promo-container {
+    padding-left: 16px;
+    margin-top: 90px;
+  }
+}
+.main-title {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 1.14583;
+  margin: 0;
+}
+@media (max-width: 850px) {
+  .main-title {
+    font-size: 75px;
+    text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  .main-title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 510px) {
+  .main-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .main-title {
+    font-size: 36px;
+  }
+}
+.promo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.text__main {
+  max-width: 495px;
+  
+  margin-top: 25px;
+
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.5;
+}
+@media (max-width: 850px) {
+  .text__main {
+    text-align: center;
+    margin: 25px auto 0 auto;
+  }
+}
+@media (max-width: 570px) {
+  .text__main {
+    font-size: 15px;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 510px) {
+  .text__main {
+    max-width: 288px;
+  }
+}
+@media (max-width: 390px) {
+  .text__main {
+    max-width: 229px;
+  }
+}
+.buttons__main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+@media (max-width: 850px) {
+  .buttons__main {
+    align-self: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 510px) {
+  .buttons__main {
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+  }
+}
+.ticket-button-main:hover,
+.play-button-main:hover {
+  background-color: #0DD1A2;
+  border: 3px solid #0DD1A2;
+}
+.ticket-button-main::before,
+.play-button-main::before  {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 31px;
+  height: 31px;
+  top: 25%;
+  left: 40px;
+} 
+.ticket-button-main::before {
+  background-image: url('../image/promo/tickets.svg');
+}
+.play-button-main::before {
+  background-image: url('../image/promo/play.svg');
+}
+.button {
+  padding: 22px 40px 22px 82px;
+  height: 68px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  border: 3px solid #15B38D;
+  border-radius: 3px; 
+  color: #fff;
+
+  transition: all 0.5s ease;
+}
+@media (max-width: 510px) {
+  .button {
+    padding: 22px 46px 22px 88px;
+  }
+}
+.ticket-button-main {
+  position: relative;
+  padding-left: 76px;
+  background: #15B38D;
+}
+.play-button-main {
+  position: relative;
+  background: inherit;
+}
+@media (max-width: 510px) {
+  .button {
+    max-width: 207px;
+
+    font-size: 18px;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .ticket-button-main {
+    padding-left: 72px;
+    padding-right: 35px;
+  }
+  .ticket-button-main:before {
+    left: 30px;
+  }
+}
+.scroll__main {
+  margin-bottom: 30px;
+}
+@media (max-width: 850px) {
+  .scroll__main {
+    margin-bottom: 20px;
+  }
+}
+.scroll-container {
+  max-width: 1206px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+
+}
+.scroll-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.social__scroll {
+  position: absolute;
+  left: 6px;
+}
+@media (max-width: 850px) {
+  .social__scroll {
+    display: none;
+  }
+}
+.social-facebook__scroll svg g ,
+.social-vk__scroll svg g  {
+  transition: all 0.5s ease;
+}
+.social-facebook__scroll:hover svg g {
+  opacity: 1;
+}
+.social-vk__scroll:hover svg g {
+  opacity: 1;
+}
